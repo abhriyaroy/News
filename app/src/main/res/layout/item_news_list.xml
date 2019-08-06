@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/itemConstraintLayout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="@dimen/news_list_item_cardview_margin"
+  android:clickable="true"
+  android:focusable="true"
+  android:foreground="?android:attr/selectableItemBackground"
+  android:orientation="vertical">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/headline"
+      android:layout_width="@dimen/news_list_item_headline_text_width"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/news_list_item_headline_margin_end"
+      android:layout_marginLeft="@dimen/news_list_item_headline_margin_left"
+      android:layout_marginRight="@dimen/news_list_item_headline_margin_right"
+      android:layout_marginStart="@dimen/news_list_item_headline_margin_start"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/imageView"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/imageView" />
+
+    <TextView
+      android:id="@+id/description"
+      android:layout_width="@dimen/news_list_item_description_width"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/news_list_item_description_margin_end"
+      android:layout_marginRight="@dimen/news_list_item_description_margin_right"
+      android:layout_marginTop="@dimen/news_list_item_description_margin_top"
+      android:ellipsize="end"
+      android:maxLines="3"
+      app:layout_constraintBottom_toBottomOf="@id/imageView"
+      app:layout_constraintEnd_toStartOf="@+id/imageView"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/headline"
+      app:layout_constraintTop_toBottomOf="@+id/headline"
+      app:layout_constraintVertical_bias="0.00999999" />
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="@dimen/news_list_item_imageview_width"
+      android:layout_height="@dimen/news_list_item_imageview_height"
+      android:layout_marginBottom="@dimen/news_list_item_imageview_margin_bottom"
+      android:layout_marginEnd="@dimen/news_list_item_imageview_margin_end"
+      android:layout_marginRight="@dimen/news_list_item_imageview_margin_right"
+      android:layout_marginTop="@dimen/news_list_item_imageview_margin_top"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

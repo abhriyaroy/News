@@ -1,3 +1,7 @@
 <resources>
-  <string name="app_name">News</string>
+  <string name="app_name">GrabHiring</string>
+  <string name="main_activity_news_loading_error_message">Ooops....something is not right!</string>
+  <string name="main_activity_tootlbar_title">Breaking News</string>
+  <string name="detail_activity_url_error_message">Couldn\'t load news details</string>
+  <string name="details_activity_default_headline">News Details</string>
 </resources>

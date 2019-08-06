@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="news_list_item_cardview_margin">8dp</dimen>
+  <dimen name="news_list_item_headline_text_width">0dp</dimen>
+  <dimen name="news_list_item_headline_margin_end">8dp</dimen>
+  <dimen name="news_list_item_headline_margin_left">24dp</dimen>
+  <dimen name="news_list_item_headline_margin_right">8dp</dimen>
+  <dimen name="news_list_item_headline_margin_start">24dp</dimen>
+  <dimen name="news_list_item_description_width">0dp</dimen>
+  <dimen name="news_list_item_description_margin_end">32dp</dimen>
+  <dimen name="news_list_item_description_margin_right">32dp</dimen>
+  <dimen name="news_list_item_description_margin_top">8dp</dimen>
+  <dimen name="news_list_item_imageview_width">90dp</dimen>
+  <dimen name="news_list_item_imageview_height">90dp</dimen>
+  <dimen name="news_list_item_imageview_margin_bottom">24dp</dimen>
+  <dimen name="news_list_item_imageview_margin_end">24dp</dimen>
+  <dimen name="news_list_item_imageview_margin_right">24dp</dimen>
+  <dimen name="news_list_item_imageview_margin_top">24dp</dimen>
+</resources>
