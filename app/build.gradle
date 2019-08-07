@@ -21,6 +21,10 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
 }
 
 dependencies {
@@ -46,6 +50,9 @@ dependencies {
   implementation "com.uber.autodispose:autodispose-android:$AUTODISPOSE_VERSION"
   implementation "com.uber.autodispose:autodispose-android-archcomponents:$AUTODISPOSE_VERSION"
   implementation "com.uber.autodispose:autodispose-android-archcomponents-test:$AUTODISPOSE_VERSION"
+  // Navigation component
+  implementation "androidx.navigation:navigation-fragment-ktx:$NAVIGATION_COMPONENT_VERSION"
+  implementation "androidx.navigation:navigation-ui-ktx:$NAVIGATION_COMPONENT_VERSION"
   // Retrofit
   implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
   implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
